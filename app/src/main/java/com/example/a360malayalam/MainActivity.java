@@ -35,7 +35,7 @@ import java.io.File;
 public class MainActivity extends AppCompatActivity {
 
     WebView webView;
-    String url ="https://360malayalam.com/";
+    String url ="YOUR_URL";
 
     private ValueCallback<Uri[]> mUMA;
     private final static int FCR = 1;
@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
             view.loadUrl(url);
             String getUrl = webView.getUrl();
 
-            if (url.startsWith("https://360malayalam.com/") || url.startsWith("http://360malayalam.com/")){
+            if (url.startsWith("https://URL/") || url.startsWith("http://URL/")){
                 return true;
             }else{
                 webView.stopLoading();
